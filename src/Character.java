@@ -2,21 +2,17 @@
  * Homework2
  * Created by jeffreyhammond on 1/24/17.
  */
-public abstract class Character {
+abstract class Character {
 
-    WeaponBehavior weaponBehavior;
+    WeaponBehavior weapon;
 
-    public Character() {
+    Character() {
     }
 
     public abstract void fight();
 
-    public void useWeapon() {
-        weaponBehavior.useWeapon();
-    }
-
-    public void setWeapon(WeaponBehavior wb) {
-        weaponBehavior = wb;
+    void setWeapon(WeaponBehavior wb) {
+        this.weapon = wb;
         System.out.println("Sets weapon.");
     }
 }

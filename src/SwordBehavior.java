@@ -1,5 +1,5 @@
-public class SwordBehavior implements WeaponBehavior {
-    @Override
+class SwordBehavior implements WeaponBehavior {
+
     public void useWeapon() {
         System.out.println("Swings sword!");
     }
